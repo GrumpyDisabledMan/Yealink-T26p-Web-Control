@@ -1,6 +1,7 @@
 <?php
     session_start();
     $ip = "0.0.0.0"; // Enter the IP Address of the Phone here
+    $sipAccount = "username@sipaccount.com"; // Enter your SIP Account name here
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,9 +38,9 @@
             
             <?php
                 echo "<div class=\"three\">";
-                    echo "<a href=\"http://$ip/servlet?key=number=$number&outgoing_uri=\" target=\"iframe_a\">Dial Account One</a>"; // Enter SIP Username after uri=
-                    echo "<a href=\"http://$ip/servlet?key=number=$number&outgoing_uri=\" target=\"iframe_a\">Dial Account Two</a>"; // Enter Second SIP Username after uri=
-                    echo "<a href=\"http://$ip/servlet?key=number=$number&outgoing_uri=\" target=\"iframe_a\">Dial Account Three</a>"; // Enter Second SIP Username after uri=
+                    echo "<a href=\"http://$ip/servlet?key=number=$number&outgoing_uri=$sipAccount\" target=\"iframe_a\">Dial Account One</a>";
+                    echo "<a href=\"http://$ip/servlet?key=number=$number&outgoing_uri=$sipAccount\" target=\"iframe_a\">Dial Account Two</a>";
+                    echo "<a href=\"http://$ip/servlet?key=number=$number&outgoing_uri=$sipAccount\" target=\"iframe_a\">Dial Account Three</a>";
                 echo "</div>";
                 echo "<div class=\"four\">";
                     echo "<a href=\"http://$ip/cgi-bin/cgiServer.exx?key=VOLUME_UP\" target=\"iframe_a\">Volume Up</a>";
@@ -79,22 +80,22 @@
                 echo "</div>";
                 // I've put examples of the four layouts you can use for displaying autodial numbers
                 echo "<div class=\"one\">";
-                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=username@sipaccount.com\" target=\"iframe_a\">Home</a>";
+                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=$sipAccount\" target=\"iframe_a\">Home</a>";
                 echo "</div>";
                 echo "<div class=\"two\">";
-                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=username@sipaccount.com\" target=\"iframe_a\">Home</a>";
-                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=username@sipaccount.com\" target=\"iframe_a\">Office</a>";
+                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=$sipAccount\" target=\"iframe_a\">Home</a>";
+                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=$sipAccount\" target=\"iframe_a\">Office</a>";
                 echo "</div>";
                 echo "<div class=\"three\">";
-                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=username@sipaccount.com\" target=\"iframe_a\">Home</a>";
-                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=username@sipaccount.com\" target=\"iframe_a\">Office</a>";
-                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=username@sipaccount.com\" target=\"iframe_a\">Supplier</a>";
+                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=$sipAccount\" target=\"iframe_a\">Home</a>";
+                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=$sipAccount\" target=\"iframe_a\">Office</a>";
+                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=$sipAccount\" target=\"iframe_a\">Supplier</a>";
                 echo "</div>";
                 echo "<div class=\"four\">";
-                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=username@sipaccount.com\" target=\"iframe_a\">Home</a>";
-                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=username@sipaccount.com\" target=\"iframe_a\">Office</a>";
-                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=username@sipaccount.com\" target=\"iframe_a\">Supplier</a>";
-                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=username@sipaccount.com\" target=\"iframe_a\">Tech Support</a>";
+                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=$sipAccount\" target=\"iframe_a\">Home</a>";
+                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=$sipAccount\" target=\"iframe_a\">Office</a>";
+                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=$sipAccount\" target=\"iframe_a\">Supplier</a>";
+                    echo "<a href=\"http://$ip/servlet?key=number=01234567890&outgoing_uri=$sipAccount\" target=\"iframe_a\">Tech Support</a>";
                 echo "</div>";
             ?>
             </div>
