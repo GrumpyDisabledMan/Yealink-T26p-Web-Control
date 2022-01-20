@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    height: 100%;
+    text-align: center;
+    background: #202020;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.container
+{
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+p, a
+{
+    color: #808080;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 80px;
+    display: block;
+}
+
+    a:hover
+    {
+        color: #FF9900;
+    }
+
+input
+{
+    width: 396.5px;
+    height: 80px;
+    font-size: 20px;
+    border: none;
+    margin: 1px;
+    color: #808080;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+input[type=text]
+{
+    background: #505050;
+    font-size: 20px;
+    padding-left: 30px;
+    width: 367px;
+}
+
+input[type=submit]
+{
+    background: #404040;
+    font-size: 20px;
+}
+
+    input[type=submit]:hover
+    {
+        background: #303030;
+        color: #FF9900;
+    }
+
+div.four
+{
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+    div.four a
+    {
+        float: left;
+        width: 197.5px;
+        background: #404040;
+        margin: 1px;
+    }
+
+        div.four a:hover
+        {
+            background: #303030;
+        }
+
+div.three
+{
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+    div.three a
+    {
+        float: left;
+        width: 264px;
+        background: #404040;
+        margin: 1px;
+    }
+
+        div.three a:hover
+        {
+            background: #303030;
+        }
+
+div.two
+{
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+    div.two a
+    {
+        float: left;
+        width: 397px;
+        background: #404040;
+        margin: 1px;
+    }
+
+        div.two a:hover
+        {
+            background: #303030;
+        }
+
+div.one
+{
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+    div.one a
+    {
+        float: left;
+        width: 797.5px;
+        background: #404040;
+        margin: 1px;
+    }
+
+        div.one a:hover
+        {
+            background: #303030;
+        }
